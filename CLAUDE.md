@@ -51,9 +51,10 @@ npm run build
 ### 실행 환경 정책
 
 - **headless 모드 사용 금지**: 항상 GUI 모드(`headless: false`)로 실행
-- **사용자 직접 실행**: 스크립트는 사용자가 직접 구동하고 결과를 Claude에게 전달
-- **xvfb 허용**: Claude의 개인 개발/테스트 용도로 xvfb 사용 가능
-- **VPN**: 추후 VPN 연결 예정 (현재 단계에서는 미적용)
+- **사용자 실행 환경**: GUI 터미널에서 `npm start` 실행 (VPN 네임스페이스 자동 적용)
+- **Claude 실행 환경**: `xvfb-run npm start` 사용 (가상 디스플레이)
+- **VPN 필수**: `npm start`는 자동으로 VPN 네임스페이스에서 실행됨
+- **IP 체크**: 시작 시 `mkt.techb.kr/ip`에서 IP 확인, 서버 IP면 즉시 종료
 
 ### 개발 정책
 

@@ -28,8 +28,8 @@ export const NAVER_URLS = {
 
 // 검색 설정
 export const SEARCH_CONFIG = {
-  // 개발용 테스트 상품명
-  TEST_PRODUCT: '아이폰 15 프로 케이스',
+  // 테스트 상품 검색어
+  TEST_PRODUCT: '달빛기정떡',
 
   // 대기 시간 (ms)
   TIMEOUT: {
@@ -37,4 +37,16 @@ export const SEARCH_CONFIG = {
     ELEMENT_WAIT: 10000,
     ACTION_DELAY: 1000,
   },
+};
+
+// IP 체크 설정
+export const IP_CHECK = {
+  URL: 'https://mkt.techb.kr/ip',
+  SERVER_IP: '119.193.40.68',  // 서버 공인 IP (VPN 연결 안 됐을 때의 IP)
+};
+
+// VPN IP 토글 설정
+export const VPN_TOGGLE = {
+  BASE_URL: 'http://112.161.54.7/toggle',
+  DEFAULT_DONGLE: 18,
 };
