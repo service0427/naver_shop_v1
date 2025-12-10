@@ -1,0 +1,289 @@
+{
+  "device": {
+    "name": "Samsung Galaxy S23+",
+    "model": "SM-S916N",
+    "brand": "Samsung",
+    "type": "mobile"
+  },
+  "display": {
+    "screenResolution": [832, 384],
+    "viewportWidth": 980,
+    "viewportHeight": 1792,
+    "devicePixelRatio": 2.8125,
+    "colorDepth": 24,
+    "colorGamut": "srgb",
+    "hdr": false
+  },
+  "os": {
+    "name": "Android",
+    "version": "10",
+    "platformVersion": "16.0.0",
+    "platform": "Linux armv81"
+  },
+  "browser": {
+    "name": "Chrome",
+    "version": "142.0.7444.171",
+    "fullVersionList": [
+      { "brand": "Chromium", "version": "142.0.7444.171" },
+      { "brand": "Google Chrome", "version": "142.0.7444.171" },
+      { "brand": "Not_A Brand", "version": "99.0.0.0" }
+    ],
+    "vendor": "Google Inc.",
+    "vendorFlavors": ["chrome"],
+    "pdfViewerEnabled": false
+  },
+  "userAgent": {
+    "full": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.171 Mobile Safari/537.36",
+    "reduced": true
+  },
+  "clientHints": {
+    "brands": [
+      { "brand": "Chromium", "version": "142" },
+      { "brand": "Google Chrome", "version": "142" },
+      { "brand": "Not_A Brand", "version": "99" }
+    ],
+    "mobile": true,
+    "platform": "Android",
+    "platformVersion": "16.0.0",
+    "architecture": "",
+    "bitness": "",
+    "wow64": false,
+    "model": "SM-S916N",
+    "formFactors": ["Mobile"]
+  },
+  "clientHintsHeaders": {
+    "Sec-CH-UA": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"",
+    "Sec-CH-UA-Platform": "\"Android\"",
+    "Sec-CH-UA-Mobile": "?1",
+    "Sec-CH-UA-Full-Version": "\"142.0.7444.171\"",
+    "Sec-CH-UA-Full-Version-List": "\"Chromium\";v=\"142.0.7444.171\", \"Google Chrome\";v=\"142.0.7444.171\", \"Not_A Brand\";v=\"99.0.0.0\"",
+    "Sec-CH-UA-Platform-Version": "\"16.0.0\"",
+    "Sec-CH-UA-Arch": "\"\"",
+    "Sec-CH-UA-Bitness": "\"\"",
+    "Sec-CH-UA-WoW64": "?0",
+    "Sec-CH-UA-Model": "\"SM-S916N\"",
+    "Sec-CH-UA-Form-Factors": "\"Mobile\"",
+    "Sec-CH-Viewport-Width": "980",
+    "Sec-CH-Viewport-Height": "1792",
+    "Sec-CH-DPR": "2.8125",
+    "Sec-CH-Device-Memory": "8",
+    "Downlink": "3.95",
+    "RTT": "100",
+    "ECT": "4g",
+    "Sec-CH-Prefers-Color-Scheme": "dark",
+    "Sec-CH-Prefers-Reduced-Motion": "no-preference",
+    "Sec-CH-Prefers-Reduced-Transparency": "no-preference"
+  },
+  "hardware": {
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "architecture": 127,
+    "maxTouchPoints": 5,
+    "touchEvent": true,
+    "touchStart": true
+  },
+  "navigator": {
+    "language": "ko-KR",
+    "languages": [["ko-KR"]],
+    "cookiesEnabled": true,
+    "doNotTrack": null,
+    "pdfViewerEnabled": false,
+    "webdriver": false,
+    "plugins": [],
+    "dateTimeLocale": "ko"
+  },
+  "storage": {
+    "localStorage": true,
+    "sessionStorage": true,
+    "indexedDB": true,
+    "openDatabase": false
+  },
+  "webGL": {
+    "vendor": "WebKit",
+    "renderer": "WebKit WebGL",
+    "unmaskedVendor": "Qualcomm",
+    "unmaskedRenderer": "Adreno (TM) 740",
+    "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+    "shadingLanguageVersion": "WebGL GLSL ES 1.0 (OpenGL ES GLSL ES 1.0 Chromium)",
+    "contextAttributes": {
+      "alpha": true,
+      "antialias": true,
+      "depth": true,
+      "desynchronized": false,
+      "failIfMajorPerformanceCaveat": false,
+      "powerPreference": "default",
+      "premultipliedAlpha": true,
+      "preserveDrawingBuffer": false,
+      "stencil": false,
+      "xrCompatible": false
+    },
+    "parameters": {
+      "MAX_COMBINED_TEXTURE_IMAGE_UNITS": 96,
+      "MAX_CUBE_MAP_TEXTURE_SIZE": 8192,
+      "MAX_FRAGMENT_UNIFORM_VECTORS": 256,
+      "MAX_RENDERBUFFER_SIZE": 16384,
+      "MAX_TEXTURE_IMAGE_UNITS": 16,
+      "MAX_TEXTURE_SIZE": 8192,
+      "MAX_VARYING_VECTORS": 31,
+      "MAX_VERTEX_ATTRIBS": 32,
+      "MAX_VERTEX_TEXTURE_IMAGE_UNITS": 16,
+      "MAX_VERTEX_UNIFORM_VECTORS": 256,
+      "MAX_VIEWPORT_DIMS": [16384, 16384],
+      "ALIASED_LINE_WIDTH_RANGE": [1, 8],
+      "ALIASED_POINT_SIZE_RANGE": [1, 1023],
+      "ALPHA_BITS": 8,
+      "BLUE_BITS": 8,
+      "GREEN_BITS": 8,
+      "RED_BITS": 8,
+      "DEPTH_BITS": 24,
+      "STENCIL_BITS": 0,
+      "SUBPIXEL_BITS": 4,
+      "SAMPLES": 4,
+      "SAMPLE_BUFFERS": 1,
+      "MAX_TEXTURE_MAX_ANISOTROPY_EXT": 16
+    },
+    "shaderPrecisions": {
+      "FRAGMENT_SHADER": {
+        "LOW_FLOAT": [15, 15, 10],
+        "MEDIUM_FLOAT": [15, 15, 10],
+        "HIGH_FLOAT": [127, 127, 23],
+        "LOW_INT": [15, 15, 0],
+        "MEDIUM_INT": [15, 15, 0],
+        "HIGH_INT": [31, 31, 0]
+      },
+      "VERTEX_SHADER": {
+        "LOW_FLOAT": [127, 127, 23],
+        "MEDIUM_FLOAT": [127, 127, 23],
+        "HIGH_FLOAT": [127, 127, 23],
+        "LOW_INT": [31, 31, 0],
+        "MEDIUM_INT": [31, 31, 0],
+        "HIGH_INT": [31, 31, 0]
+      }
+    },
+    "extensions": [
+      "ANGLE_instanced_arrays",
+      "EXT_blend_minmax",
+      "EXT_color_buffer_half_float",
+      "EXT_float_blend",
+      "EXT_texture_compression_bptc",
+      "EXT_texture_compression_rgtc",
+      "EXT_texture_filter_anisotropic",
+      "EXT_sRGB",
+      "OES_element_index_uint",
+      "OES_fbo_render_mipmap",
+      "OES_standard_derivatives",
+      "OES_texture_float",
+      "OES_texture_float_linear",
+      "OES_texture_half_float",
+      "OES_texture_half_float_linear",
+      "OES_vertex_array_object",
+      "WEBGL_color_buffer_float",
+      "WEBGL_compressed_texture_astc",
+      "WEBGL_compressed_texture_etc",
+      "WEBGL_compressed_texture_etc1",
+      "WEBGL_compressed_texture_s3tc",
+      "WEBGL_compressed_texture_s3tc_srgb",
+      "WEBGL_debug_renderer_info",
+      "WEBGL_debug_shaders",
+      "WEBGL_depth_texture",
+      "WEBGL_lose_context",
+      "WEBGL_multi_draw"
+    ],
+    "unsupportedExtensions": []
+  },
+  "network": {
+    "effectiveType": "4g",
+    "downlink": 3.95,
+    "rtt": 100
+  },
+  "timezone": {
+    "name": "Asia/Seoul",
+    "offset": 540
+  },
+  "fonts": {
+    "available": ["sans-serif-thin"],
+    "defaultFont": "sans-serif"
+  },
+  "audio": {
+    "fingerprint": 124.08075643483608,
+    "baseLatency": 0.004
+  },
+  "canvas": {
+    "winding": true,
+    "geometryHash": "available",
+    "textHash": "available"
+  },
+  "math": {
+    "acos": 1.4473588658278522,
+    "acosh": 709.889355822726,
+    "acoshPf": 355.291251501643,
+    "asin": 0.12343746096704435,
+    "asinh": 0.881373587019543,
+    "asinhPf": 0.8813735870195429,
+    "atanh": 0.5493061443340548,
+    "atanhPf": 0.5493061443340548,
+    "atan": 0.4636476090008061,
+    "sin": 0.8178819121159085,
+    "sinh": 1.1752011936438014,
+    "sinhPf": 2.534342107873324,
+    "cos": -0.8390715290095377,
+    "cosh": 1.5430806348152437,
+    "coshPf": 1.5430806348152437,
+    "tan": -1.4214488238747245,
+    "tanh": 0.7615941559557649,
+    "tanhPf": 0.7615941559557649,
+    "exp": 2.718281828459045,
+    "expm1": 1.718281828459045,
+    "expm1Pf": 1.718281828459045,
+    "log1p": 2.3978952727983707,
+    "log1pPf": 2.3978952727983707,
+    "powPI": 1.9275814160560206e-50
+  },
+  "fontPreferences": {
+    "default": 58.56666946411133,
+    "apple": 58.56666946411133,
+    "serif": 58.77222442626953,
+    "sans": 51.87778091430664,
+    "mono": 47.155555725097656,
+    "min": 3.6611111164093018,
+    "system": 51.87778091430664
+  },
+  "accessibility": {
+    "forcedColors": false,
+    "invertedColors": null,
+    "reducedMotion": false,
+    "reducedTransparency": false,
+    "monochrome": 0,
+    "contrast": 0,
+    "prefersColorScheme": "dark"
+  },
+  "fingerprint": {
+    "visitorId": "sample_visitor_id",
+    "confidence": 1.0,
+    "bot": false,
+    "incognito": false,
+    "tampering": false
+  },
+  "playwrightConfig": {
+    "viewport": {
+      "width": 412,
+      "height": 915
+    },
+    "deviceScaleFactor": 2.8125,
+    "isMobile": true,
+    "hasTouch": true,
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.171 Mobile Safari/537.36",
+    "locale": "ko-KR",
+    "timezoneId": "Asia/Seoul",
+    "colorScheme": "dark"
+  },
+  "_meta": {
+    "collectedAt": "2025-12-09T11:17:31",
+    "sources": [
+      "browserleaks-javascript-2025_12_09_11_16_55.png",
+      "browserleaks-clienthints-2025_12_09_11_17_31.png",
+      "s23plus_fingerprints.json"
+    ],
+    "note": "Galaxy S23+ (SM-S916N) 실제 기기에서 수집한 핑거프린트 데이터"
+  }
+}

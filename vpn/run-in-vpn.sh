@@ -50,17 +50,21 @@ if ! ip netns list | grep -q "^$NAMESPACE"; then
     error "VPN 네임스페이스가 없습니다. 먼저 'sudo ./vpn-up.sh'를 실행하세요."
 fi
 
-# 현재 VPN IP 확인
-VPN_IP=$(ip netns exec "$NAMESPACE" curl -s --max-time 5 https://api.ipify.org 2>/dev/null || echo "확인 실패")
-log "VPN IP: $VPN_IP"
-
-# 명령 실행
-log "VPN 네임스페이스에서 실행: $@"
-log "============================================"
-
 # 원래 사용자 정보 (sudo 실행 시에도 유지)
 REAL_USER="${SUDO_USER:-$USER}"
 REAL_HOME=$(getent passwd "$REAL_USER" | cut -d: -f6)
+
+# 현재 VPN IP 확인 (실패해도 계속 진행)
+VPN_IP=$(ip netns exec "$NAMESPACE" curl -s --max-time 3 http://mkt.techb.kr/ip 2>/dev/null || echo "")
+if [ -n "$VPN_IP" ]; then
+    log "VPN IP: $VPN_IP"
+else
+    log "VPN IP 확인 건너뜀 (첫 연결 시 정상)"
+fi
+
+# 명령 실행
+log "VPN 네임스페이스에서 실행: $1"
+log "============================================"
 
 # X 서버 접근 권한 부여 (GUI 표시용)
 if [ -n "$DISPLAY" ]; then
@@ -78,6 +82,11 @@ REAL_GID=$(id -g "$REAL_USER")
 
 # 환경 변수 유지하면서 실행 (DISPLAY 포함)
 # 핵심: ip netns exec로 네임스페이스 진입 후, sudo -u로 원래 사용자로 전환
+# 현재 디렉토리와 node_modules/.bin을 PATH에 추가
+CURRENT_DIR="$(pwd)"
+NODE_BIN="$CURRENT_DIR/node_modules/.bin"
+EXTENDED_PATH="$NODE_BIN:$PATH"
+
 # 이렇게 해야 X 서버 소켓 권한 문제가 해결됨
 exec ip netns exec "$NAMESPACE" \
     sudo -u "$REAL_USER" \
@@ -91,7 +100,7 @@ exec ip netns exec "$NAMESPACE" \
     QT_IM_MODULE="${QT_IM_MODULE:-ibus}" \
     XMODIFIERS="${XMODIFIERS:-@im=ibus}" \
     IBUS_DAEMON_ARGS="--xim" \
-    PATH="$PATH" \
+    PATH="$EXTENDED_PATH" \
     NODE_PATH="$NODE_PATH" \
     PLAYWRIGHT_BROWSERS_PATH="$REAL_HOME/.cache/ms-playwright" \
     "$@"

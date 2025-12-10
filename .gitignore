@@ -3,3 +3,16 @@ dist/
 debug/
 *.log
 .DS_Store
+
+# 사용자 데이터 (브라우저 캐시, 쿠키 등)
+user_data/
+
+# 백업 및 임시 파일
+backup/
+*.tmp
+
+# HAR 파일 (네트워크 분석용)
+har/
+
+# VPN 토글 상태 파일
+vpn_toggle_state.json
